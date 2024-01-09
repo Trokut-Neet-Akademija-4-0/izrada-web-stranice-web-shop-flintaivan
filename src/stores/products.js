@@ -4,6 +4,7 @@ export const productsStore = defineStore({
   id: 'products',
   state: () => ({
     products: [],
+    cart: [],
   }),
 
   actions: {
@@ -13,6 +14,14 @@ export const productsStore = defineStore({
         .then(json => {
           this.products = json.products;
         })
+    },
+
+    addToCart(product) {
+      this.cart.push(product)
+    },
+
+    removeFromCart(product) {
+      this.cart = this.cart.filter((item) => item.od !== product.id)
     }
   }
 })
