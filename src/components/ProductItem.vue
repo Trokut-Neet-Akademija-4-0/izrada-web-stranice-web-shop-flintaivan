@@ -8,7 +8,8 @@
                     <p>${{ props.product.price }}</p>
                 </div>
                 <div class="product-item-desc">
-                    <p>{{ props.product.description }}</p>
+                    <div v-if="props.product.description.length<50">Welcome, {{ props.product.description }}</div>
+                    <div v-else>Welcome, {{ props.product.description.substring(0,50)+".." }}</div>
                 </div>
                 <div class="product-item-links">
                     <router-link :to="{name: 'ProductDetails', params: {id: props.product.id}}" class="btn btn-light-outline">Show more</router-link>
