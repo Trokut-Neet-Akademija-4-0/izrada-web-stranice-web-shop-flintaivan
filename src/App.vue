@@ -1,20 +1,17 @@
 <template>
-  <header>
-    <div class="cart-items" @click="router.push({name: 'Cart'})">
-      <p>Items in Cart: {{ products.cart.length }}</p>
-    </div>
-  </header>
+
+  <Navbar />
+
   <main>
+
     <RouterView />
   </main>
 </template>
 
 <script setup>
-import { useRouter } from 'vue-router';
-import { productsStore } from './stores/products';
+import Navbar from './components/Navbar.vue';
 
-const router = useRouter();
-const products = productsStore();
+
 </script>
 
 
