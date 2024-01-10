@@ -1,8 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: #525CEB;
+    --secondary-color: #BFCFE7;
+    --dark-color: #3D3B40;
+    --light-color: #F8EDFF;
+    --danger-color: #eb525c;
+    --success-color: #5ceb52;
+    --primary-font: 'Share Tech', sans-serif;
+    --secondary-font: 'Lexend Deca', sans-serif;
+}
 * {
     margin: 0;
     padding: 0;
 }
-
+body {
+    font-family: var(--secondary-font);
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    font-size: 1em;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--primary-font);
+    color: var(--dark-color);
+}
 main {
     max-width: 900px;
     margin: 0 auto;
