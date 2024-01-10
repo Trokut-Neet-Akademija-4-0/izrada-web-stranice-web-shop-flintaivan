@@ -1,18 +1,20 @@
 <template>
+  <div class="content-wrapper">
     <button @click="router.go(-1)">Back</button>
-  <div v-if="loading">Loading...</div>
-  <div v-else-if="selectedProduct" class="product">
-    <div class="product-image">
-      <img :src="selectedProduct.thumbnail" alt="" width="400" height="250">
-    </div>
-    <div class="product-details">
-        <h2>{{ selectedProduct.title }}</h2>
-      <p>Brand: {{ selectedProduct.brand }}</p>
-      <p>Description: {{ selectedProduct.description }}</p>
-      <p>Price: {{ selectedProduct.price }}</p>
-      <button @click="addToCart(selectedProduct.id)">Add to cart</button>
-    </div>
-  </div> 
+    <div v-if="loading">Loading...</div>
+    <div v-else-if="selectedProduct" class="product">
+      <div class="product-image">
+        <img :src="selectedProduct.thumbnail" alt="" width="400" height="250">
+      </div>
+      <div class="product-details">
+          <h2>{{ selectedProduct.title }}</h2>
+        <p>Brand: {{ selectedProduct.brand }}</p>
+        <p>Description: {{ selectedProduct.description }}</p>
+        <p>Price: {{ selectedProduct.price }}</p>
+        <button @click="addToCart(selectedProduct.id)">Add to cart</button>
+      </div>
+    </div> 
+  </div>
 </template>
 
 <script setup>  

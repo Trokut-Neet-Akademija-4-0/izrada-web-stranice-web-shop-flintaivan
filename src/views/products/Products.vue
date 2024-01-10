@@ -1,11 +1,13 @@
 <template>
-    <h1>Products</h1>
-    <div class="products-list">
-      <div class="product-item" v-for="product in products.products" :key="product.id" @click="goToProductPage(product.id)">
-          <img :src="product.thumbnail" alt="" width="300" height="170">
-          <h2>{{ product.title }}</h2>
-          <p>{{ product.description }}</p>
-          <p>${{ product.price }}</p>
+  <div class="content-wrapper">
+      <h1>Products</h1>
+      <div class="products-list">
+        <div class="product-item" v-for="product in products.products" :key="product.id" @click="goToProductPage(product.id)">
+            <img :src="product.thumbnail" alt="" width="300" height="170">
+            <h2>{{ product.title }}</h2>
+            <p>{{ product.description }}</p>
+            <p>${{ product.price }}</p>
+        </div>
       </div>
     </div>
 </template>
