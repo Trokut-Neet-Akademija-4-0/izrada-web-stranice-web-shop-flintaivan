@@ -136,20 +136,32 @@ a {
 
 }
 
+/* Columns */
+.container {
+    display: flex;
+}
+
+.col-8 {
+    flex: 0 0 66.66%; /* 8 out of 12 columns */
+}
+
+.col-4 {
+    flex: 0 0 33.33%; /* 4 out of 12 columns */
+}
 
 /* Product */
 .products-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; 
+  justify-content: space-between; 
   padding: 0;
 }
 
 .product-item {
-  flex: 0 0 calc(30% - 20px); 
+  flex: 0 0 calc(25% - 20px); 
   margin: 10px;
   box-sizing: border-box; 
-  width: 320px;
+  width: 255px;
   border: 1px solid rgba(0,0,0,0.2); 
   border-radius: 4px;
   padding: 10px;
