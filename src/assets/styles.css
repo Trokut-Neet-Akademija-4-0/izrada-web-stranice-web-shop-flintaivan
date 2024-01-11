@@ -41,13 +41,19 @@ header {
 main {
     margin: 0 auto;
 }
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
 .content-wrapper {
     max-width: 1260px;
     margin: 0 auto;
 }
 .full-width {
     width: 100%;
-    padding: 50px 0;
+    padding: 10px 0;
 }
 /* Colors */
 .primary {
@@ -56,6 +62,10 @@ main {
 }
 .secondary {
     background-color: var(--secondary-color);
+    color: var(--light-color);
+}
+.dark {
+    background-color: var(--dark-color);
     color: var(--light-color);
 }
 
@@ -304,4 +314,11 @@ main {
 
 .mb-5 {
     margin-bottom: calc(var(--spacer) * 3);
+}
+
+.py50 {
+    padding: 50px 0;
+}
+.py30 {
+    padding: 30px 0;
 }

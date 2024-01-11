@@ -3,10 +3,18 @@
   <main>
     <RouterView />
   </main>
+  <footer>
+    <div class="full-width dark">
+            <div class="content-wrapper py30">
+                <Footer />
+            </div>
+        </div>
+  </footer>
 </template>
 
 <script setup>
 import Navbar from './components/Navbar.vue';
+import Footer from './components/Footer.vue'
 </script>
 
 
