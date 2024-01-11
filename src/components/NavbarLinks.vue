@@ -12,6 +12,9 @@
         <li>
             <router-link :to="{name: 'Categories'}">Categories</router-link>
         </li>
+        <li>
+            <router-link :to="{name: 'Contact'}">Contact</router-link>
+        </li>
     </ul>
 </template>
 
