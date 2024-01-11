@@ -14,6 +14,9 @@
 </script>
 
 <style scoped>
+.content-wrapper {
+    padding: 30px;
+}
 h1, p, a {
     margin: 0.4em 0;
 }
