@@ -9,6 +9,9 @@
         <li>
             <router-link :to="{name: 'Products'}">Products</router-link>
         </li>
+        <li>
+            <router-link :to="{name: 'Categories'}">Categories</router-link>
+        </li>
     </ul>
 </template>
 
