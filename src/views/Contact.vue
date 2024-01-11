@@ -67,9 +67,6 @@ import Sidebar from '../components/Sidebar.vue'
 </script>
 
 <style scoped>
-::v-deep .sidebar {
-  margin-left: auto;
-}
 label {
   text-transform: capitalize;
   display: inline-block;
