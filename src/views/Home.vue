@@ -7,11 +7,15 @@
         </div>
         <div class="full-width mt-5">
             <div class="content-wrapper">
-                <h2 class="cat-title mb-5 mt-5">Search by Categories</h2>
+                <h2 class="mb-5 mt-5">Search by Categories</h2>
                 <div class="category-list">
                     <Category v-for="cat in categories.categories" :key="cat.id" :cat="cat"/>
                 </div>
             </div>
+        </div>
+        <div class="content-wrapper">
+            <h2 class="mt-5">Whats new</h2>
+            <BlogItem class="mt-5"/>
         </div>
     </main>
 </template>
@@ -20,6 +24,7 @@
 import Header from '../components/Header.vue';
 import HighlightProducts from '@/components/HighlightProducts.vue';
 import Category from '../components/Category.vue'
+import BlogItem from '@/components/BlogItem.vue';
 import { productsStore } from '@/stores/products'
 import { onMounted } from 'vue';
 
@@ -34,11 +39,7 @@ onMounted(() => {
 h2 {
     text-align: center;
 }
-h2.cat-title {
-    color: var(--light-color);
-}
 .content-wrapper {
     padding: 50px 0;
 }
-
 </style>
