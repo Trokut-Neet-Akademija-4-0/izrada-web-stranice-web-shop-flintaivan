@@ -29,7 +29,6 @@ import HighlightProducts from '@/components/HighlightProducts.vue';
 import Category from '../components/Category.vue'
 import BlogItem from '@/components/BlogItem.vue';
 import Newsletter from '../components/Newsletter.vue'
-import Footer from '../components/Footer.vue'
 import { productsStore } from '@/stores/products'
 import { onMounted } from 'vue';
 
