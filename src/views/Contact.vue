@@ -101,20 +101,7 @@ a:hover {
 ul li {
     margin-top: 10px;
 }
-.main-title {
-    margin: 50px 10px 30px;
-    display: flex;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-    justify-content: space-between;
-    align-items: center;
-    /* width: 100%; */
-    border-radius: 8px;
-    -webkit-box-shadow: 0px 7px 40px -3px rgba(61,60,61,0.5);
-    -moz-box-shadow: 0px 7px 40px -3px rgba(61,60,61,0.5);
-    box-shadow: 0px 7px 40px -3px rgba(61,60,61,0.5);
-}
+
 .contact-aside-wrapper {
     display: flex;
     flex-direction: column;
