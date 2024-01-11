@@ -7,7 +7,7 @@
             <div class="blog-item-content">
                 <div class="blog-item-info">
                     <h3>Some blog title</h3>
-                    <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, magnam. Nemo quasi amet odio reprehenderit soluta consequatur, suscipit quidem dignissimos reiciendis eaque consequuntur quibusdam veritatis culpa doloremque dolorum numquam maiores, possimus aperiam temporibus aliquam quas. Esse in consectetur cum rem officia necessitatibus labore aut quaerat. Tenetur totam error molestiae minus.</p>
+                    <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam harum excepturi sed nam! Veritatis pariatur quia ab exercitationem nemo, nihil modi officiis! Necessitatibus quaerat expedita illum quia consectetur hic aliquid.</p>
                 </div>
                 <div class="blog-item-action">
                     <button class="btn btn-light-outline mt-5">Show more</button>
@@ -21,7 +21,7 @@
             <div class="blog-item-content">
                 <div class="blog-item-info">
                     <h3>Some blog title</h3>
-                    <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, magnam. Nemo quasi amet odio reprehenderit soluta consequatur, suscipit quidem dignissimos reiciendis eaque consequuntur quibusdam veritatis culpa doloremque dolorum numquam maiores, possimus aperiam temporibus aliquam quas. Esse in consectetur cum rem officia necessitatibus labore aut quaerat. Tenetur totam error molestiae minus.</p>
+                    <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam harum excepturi sed nam! Veritatis pariatur quia ab exercitationem nemo, nihil modi officiis! Necessitatibus quaerat expedita illum quia consectetur hic aliquid.</p>
                 </div>
                 <div class="blog-item-action">
                     <button class="btn btn-light-outline mt-5">Show more</button>
@@ -35,7 +35,7 @@
             <div class="blog-item-content">
                 <div class="blog-item-info">
                     <h3>Some blog title</h3>
-                    <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, magnam. Nemo quasi amet odio reprehenderit soluta consequatur, suscipit quidem dignissimos reiciendis eaque consequuntur quibusdam veritatis culpa doloremque dolorum numquam maiores, possimus aperiam temporibus aliquam quas. Esse in consectetur cum rem officia necessitatibus labore aut quaerat. Tenetur totam error molestiae minus.</p>
+                    <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam harum excepturi sed nam! Veritatis pariatur quia ab exercitationem nemo, nihil modi officiis! Necessitatibus quaerat expedita illum quia consectetur hic aliquid.</p>
                 </div>
                 <div class="blog-item-action">
                     <button class="btn btn-light-outline mt-5">Show more</button>
