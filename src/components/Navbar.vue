@@ -18,23 +18,14 @@
             </div>
         </div>
         <div class="links">
-            <ul>
-                <li class="logo">
-                    <img src="../assets/images/logo.png" alt="" width="" height="80">
-                </li>
-                <li>
-                    <router-link :to="{name: 'Home'}">Home</router-link>
-                </li>
-                <li>
-                    <router-link :to="{name: 'Products'}">Products</router-link>
-                </li>
-            </ul>
+            <NavbarLinks />
         </div>
     </nav>
 </template>
 
 <script setup>
 import { productsStore } from '../stores/products';
+import NavbarLinks from './NavbarLinks.vue';
 
 const products = productsStore();
 </script>
