@@ -1,6 +1,5 @@
 <template>
     <Header />
-    <main>
         <div class="content-wrapper">
             <h2 class="mt-5 mb-5">Check out our products</h2>
             <HighlightProducts />
@@ -22,7 +21,6 @@
                 <Newsletter />
             </div>
         </div>
-    </main>
 </template>
 
 <script setup>
