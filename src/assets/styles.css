@@ -47,11 +47,17 @@ main {
 }
 .full-width {
     width: 100%;
-    background-color: var(--secondary-color);
-    color: var(--light-color);
     padding: 50px 0;
 }
-
+/* Colors */
+.primary {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+.secondary {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+}
 
 /* Buttons */
 .btn {
@@ -81,7 +87,22 @@ main {
     background-color: var(--dark-color);
     color: var(--light-color);
 }
-
+.btn-light {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+.btn-light:hover {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+.btn-dark {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+.btn-dark:hover {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
 
 /* Outline buttons */
 .btn-light-outline {
