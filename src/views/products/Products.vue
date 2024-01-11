@@ -1,9 +1,9 @@
 <template>
   <div class="content-wrapper">
-    <h2 class="aside-title">Products</h2>
+    <h2 class="main-title">Products</h2>
     <div class="container">
       <div class="col-4">
-        <Sidebar>
+        <Sidebar align="right">
           <h2>Filter</h2>
           <form action="">
             <div class="form-group">
@@ -66,7 +66,7 @@ onMounted(() => {
 </script>
 
 <style scoped>
-h2.aside-title {
+.main-title {
     margin: 50px 10px 30px;
     display: flex;
     border: 1px solid #ccc;
