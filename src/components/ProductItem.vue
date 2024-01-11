@@ -1,15 +1,16 @@
 <template>
     <div>
         <div class="product-item" :key="props.product.id">
-            <img :src="props.product.thumbnail" alt="" width="300" height="170">
+            <img :src="props.product.thumbnail" alt="" width="230" height="120">
             <div class="product-item-content">
                 <div class="product-item-info">
-                    <h2>{{ props.product.title }}</h2>
+                    <h2 v-if="props.product.title.length<12">{{ props.product.title }}</h2>
+                    <h2 v-else>{{ props.product.title.substring(0,12)+"..." }}</h2>
                     <p>${{ props.product.price }}</p>
                 </div>
                 <div class="product-item-desc">
                     <div v-if="props.product.description.length<50">Welcome, {{ props.product.description }}</div>
-                    <div v-else>Welcome, {{ props.product.description.substring(0,50)+".." }}</div>
+                    <div v-else>Welcome, {{ props.product.description.substring(0,20)+".." }}</div>
                 </div>
                 <div class="product-item-links">
                     <router-link :to="{name: 'ProductDetails', params: {id: props.product.id}}" class="btn btn-light-outline">Show more</router-link>

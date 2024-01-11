@@ -43,7 +43,7 @@ const stockAndAvailability = () => {
 }
 
 const addToCart = (id) => {
-    store.addToCart(props.item.value)
+    store.addToCart(id)
 }
 </script>
 

@@ -7,7 +7,7 @@
         <div class="newsletter-content">
             <form>
                 <input type="email" placeholder="Email" required>
-                <input type="submit" class="btn-newsletter btn-dark">
+                <input type="submit" class="btn-newsletter btn-dark" value="Register">
             </form>
         </div>
     </div>
