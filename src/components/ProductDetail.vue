@@ -21,10 +21,15 @@
             </div>
         </div>
     </div>
+    <div class="content-wrapper mt-5 mb-5">
+        <h2 class="mt-5 mb-5">Check similar products</h2>
+        <HighlightProducts />
+    </div>
 </template>
 
 <script setup>
 import ProductGallery from './ProductGallery.vue';
+import HighlightProducts from './HighlightProducts.vue';
 import { useRouter } from 'vue-router';
 import { defineProps } from 'vue';
 import { productsStore } from '@/stores/products';
