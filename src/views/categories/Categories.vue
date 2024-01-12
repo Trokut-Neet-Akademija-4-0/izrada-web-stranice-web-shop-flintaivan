@@ -1,6 +1,6 @@
 <template>
     <div class="content-wrapper py50">
-        <h2 class="mt-5">Search by Categories</h2>
+        <h2 class="main-title">Search by Categories</h2>
         <div class="category-list mt-5">
             <Category v-for="cat in categories.categories" :key="cat.id" :cat="cat"/>
         </div>
