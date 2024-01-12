@@ -97,6 +97,7 @@ aside {
 
 /* Buttons */
 .btn {
+    border: none;
     display: inline-block;
     text-decoration: none;
     margin: 6px 0;
@@ -139,6 +140,15 @@ aside {
 .btn-dark:hover {
     background-color: var(--light-color);
     color: var(--dark-color);
+}
+.btn-danger {
+    border: 1px solid var(--danger-color);
+    background-color: var(--danger-color);
+    color: var(--light-color);
+}
+.btn-danger:hover {
+    background-color: var(--light-color);
+    color: var(--danger-color);
 }
 
 /* Outline buttons */
@@ -265,6 +275,11 @@ aside {
     width: 60%;
     padding-left: 20px;
     margin: 2rem;
+}
+.price {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin: 1rem 0;
 }
 
 /* Category */
