@@ -257,7 +257,7 @@ aside {
     box-shadow: 0px 7px 40px -3px rgba(61,60,61,0.5);
 }
 .detail-card-content {
-    width: 100%;
+    width: calc(100% - 40px);
     display: flex;
     margin: 2rem 0;
     border: 1px solid #ccc;
@@ -286,7 +286,7 @@ aside {
 .category-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; 
+  justify-content: space-between; 
   padding: 0;
 }
 

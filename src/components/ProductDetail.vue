@@ -7,7 +7,8 @@
         </div>
         <div class="detail-card-content">
             <div class="detail-card-image">
-                <img :src="props.item.thumbnail" alt="">
+                <ProductGallery :images="props.item.images"/>
+                <!-- <img :src="props.item.thumbnail" alt=""> -->
             </div>
             <div class="detail-card-info">
                 <h2 class="price">Price: ${{ props.item.price }}</h2>
@@ -16,13 +17,14 @@
                 <p>Description: <br>{{ props.item.description }}</p>
                 <hr>
                 <p v-if="props.item.stock" :class="stockAndAvailability().class">Availability: {{ stockAndAvailability().text }}</p>
-                <button @click="addToCart(props.item.id)" class="btn btn-primary-outline">Add to cart</button>
+                <button @click="addToCart(props.item)" class="btn btn-primary-outline">Add to cart</button>
             </div>
         </div>
     </div>
 </template>
 
 <script setup>
+import ProductGallery from './ProductGallery.vue';
 import { useRouter } from 'vue-router';
 import { defineProps } from 'vue';
 import { productsStore } from '@/stores/products';
@@ -51,11 +53,7 @@ const addToCart = (id) => {
 .detail-card-info p {
     margin: 10px 0;
 }
-.price {
-    color: var(--primary-color);
-    font-size: 2rem;
-    margin: 1rem 0;
-}
+
 .detail-card-info button {
     float: right;
     margin-top: 1.2rem;

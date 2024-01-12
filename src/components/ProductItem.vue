@@ -14,7 +14,7 @@
                 </div>
                 <div class="product-item-links">
                     <router-link :to="{name: 'ProductDetails', params: {id: props.product.id}}" class="btn btn-light-outline">Show more</router-link>
-                    <button @click.stop="addToCart(props.product.id)" class="btn btn-primary-outline">Add to cart</button>
+                    <button @click.stop="addToCart(props.product)" class="btn btn-primary-outline">Add to cart</button>
                 </div>
             </div>
         </div>
