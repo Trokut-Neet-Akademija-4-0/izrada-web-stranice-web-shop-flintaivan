@@ -10,15 +10,15 @@ export const productsStore = defineStore({
   }),
 
   actions: {
-    fetchProductsFromDB() {
-      fetch('https://dummyjson.com/products')
+    async fetchProductsFromDB() {
+      await fetch('https://dummyjson.com/products')
         .then(res => res.json())
         .then(json => {
           this.products = json.products;
         })
     },
-    fetchCategories() {
-      fetch('https://dummyjson.com/products/categories')
+    async fetchCategories() {
+      await fetch('https://dummyjson.com/products/categories')
           .then(res => res.json())
           .then(json => {
             this.categories = json.slice(0, 6);
@@ -37,7 +37,7 @@ export const productsStore = defineStore({
 
     async fetchHighlightedProducts() {
       await this.fetchProductsFromDB();
-      this.highlightedProducts = this.products.filter((item) => item.price > 1000).slice(0, 8);
+      this.highlightedProducts = this.products.filter((item) => item.rating > 4).slice(0, 8);
       return this.highlightedProducts
     }
   }
