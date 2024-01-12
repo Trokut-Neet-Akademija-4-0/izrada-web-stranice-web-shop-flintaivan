@@ -10,7 +10,7 @@
                     <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam harum excepturi sed nam! Veritatis pariatur quia ab exercitationem nemo, nihil modi officiis! Necessitatibus quaerat expedita illum quia consectetur hic aliquid.</p>
                 </div>
                 <div class="blog-item-action">
-                    <button class="btn btn-light-outline mt-5">Show more</button>
+                    <router-link :to="{name: 'BlogDetails'}" class="btn btn-light-outline mt-5">Show more</router-link>
                 </div>
             </div>
         </div>
@@ -24,7 +24,7 @@
                     <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam harum excepturi sed nam! Veritatis pariatur quia ab exercitationem nemo, nihil modi officiis! Necessitatibus quaerat expedita illum quia consectetur hic aliquid.</p>
                 </div>
                 <div class="blog-item-action">
-                    <button class="btn btn-light-outline mt-5">Show more</button>
+                    <router-link :to="{name: 'BlogDetails'}" class="btn btn-light-outline mt-5">Show more</router-link>
                 </div>
             </div>
         </div>
@@ -38,7 +38,7 @@
                     <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam harum excepturi sed nam! Veritatis pariatur quia ab exercitationem nemo, nihil modi officiis! Necessitatibus quaerat expedita illum quia consectetur hic aliquid.</p>
                 </div>
                 <div class="blog-item-action">
-                    <button class="btn btn-light-outline mt-5">Show more</button>
+                    <router-link :to="{name: 'BlogDetails'}" class="btn btn-light-outline mt-5">Show more</router-link>
                 </div>
             </div>
         </div>

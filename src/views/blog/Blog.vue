@@ -14,7 +14,7 @@
                 <Sidebar align="left">
                     <h2></h2>
                     <div class="blog-aside-wrapper">
-                        <ProductItem v-for="product in sidebarProducts" :key="product.id" :product="product"/>
+                        <ProductItem v-for="product in sidebarProducts" :key="product.id" :product="product" @click="goToProductPage(product.id)"/>
                     </div>
                 </Sidebar>
             </div>
@@ -28,9 +28,15 @@ import BlogItem from '@/components/BlogItem.vue';
 import ProductItem from '@/components/ProductItem.vue';
 import { productsStore } from '@/stores/products';
 import { ref,onMounted } from 'vue';
+import { useRouter } from 'vue-router';
 
+const router = useRouter()
 const store = productsStore()
 const sidebarProducts = ref([])
+const goToProductPage = (id) => {
+  router.push({ name: 'ProductDetails', params: {id: id} });
+}
+
 
 onMounted(async() => {
     await store.fetchProductsFromDB()

@@ -5,7 +5,8 @@ import ProductDetails from '../views/products/ProductsDetails.vue'
 import Cart from '../views/Cart.vue'
 import Categories from '../views/categories/Categories.vue'
 import Contact from '../views/Contact.vue'
-import Blog from '../views/Blog.vue'
+import Blog from '../views/blog/Blog.vue'
+import BlogDetails from '../views/blog/BlogDetails.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -44,6 +45,11 @@ const router = createRouter({
       path: '/blog',
       name: 'Blog',
       component: Blog,
+    },
+    {
+      path: '/blog/1',
+      name: 'BlogDetails',
+      component: BlogDetails
     }
   ]
 })
