@@ -32,12 +32,12 @@ export const productsStore = defineStore({
     },
 
     removeFromCart(product) {
-      this.cart = this.cart.filter((item) => item.od !== product.id)
+      this.cart = this.cart.filter((item) => item.id !== product.id)
     },
 
     async fetchHighlightedProducts() {
       await this.fetchProductsFromDB();
-      this.highlightedProducts = this.products.filter((item) => item.price > 1000).slice(0, 6);
+      this.highlightedProducts = this.products.filter((item) => item.price > 1000).slice(0, 8);
       return this.highlightedProducts
     }
   }
