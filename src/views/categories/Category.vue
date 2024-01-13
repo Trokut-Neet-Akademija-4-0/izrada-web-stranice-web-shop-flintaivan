@@ -10,7 +10,7 @@
               <label for="name" class="block">Search by name</label>
               <br>
               <input class="filter" type="text" name="name" v-model="search">
-            </div>
+             </div>
             <h3>Price</h3>
             <div class="form-group-two">
               <div class="left">
@@ -28,7 +28,7 @@
               <label :for="cat" class="check"> {{ cat }}</label>
             </div>
             <h3 class="mb-2 mt-3">Brand</h3>
-            <div class="form-group" v-for="brand in products.products" :key="brand.id" >
+            <div class="form-group" v-for="brand in products.categoryProducts" :key="brand.id" >
               <input type="checkbox" :id="brand.id" :value="brand.brand">
               <label :for="brand.id" class="check"> {{ brand.brand }}</label>
             </div>
@@ -47,35 +47,37 @@
 <script setup>
 import ProductItem from '@/components/ProductItem.vue';
 import Sidebar from '@/components/Sidebar.vue'
-import { onMounted } from 'vue';
+import { onMounted, ref, computed } from 'vue';
 import { productsStore } from '@/stores/products';
 import { useRouter } from 'vue-router';
-import { computed, ref } from 'vue';
+import { useRoute } from 'vue-router';
 
 const products = productsStore();
 const categories = productsStore();
 const router = useRouter();
+const route = useRoute();
 
 let search = ref('');
 
 let filteredProducts = computed(() => {
-  if (!search.value) return products.products;
-  return products.products.filter(product => product.title.toLowerCase().includes(search.value.toLowerCase()));
+  if (!search.value) return products.categoryProducts;
+  return products.categoryProducts.filter(product => product.title.toLowerCase().includes(search.value.toLowerCase()));
 });
+
 
 const goToProductPage = (id) => {
   router.push({ name: 'ProductDetails', params: {id: id} });
 }
 
 onMounted(() => {
-  products.fetchProductsFromDB();
+  products.fetchByCategory(route.params.category);
   categories.fetchCategories()
 });
 </script>
 
 <style scoped>
 .products-list {
-  justify-content: flex-start;
+    justify-content: flex-start;
 }
 .main-title {
     margin: 50px 10px 30px;

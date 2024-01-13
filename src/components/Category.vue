@@ -1,17 +1,19 @@
 <template>
+    <router-link :to="{name: 'Category', params: {category: props.cat}}">
     <div class="category-item">
         <div class="category-item-content">
-            <i :class="catIcon()"></i>
-            <p class="mt-4">{{ props.cat }}</p>
+                <i :class="catIcon()"></i>
+                <p class="mt-4">{{ props.cat }}</p>
+            </div>
         </div>
-    </div>
+    </router-link>
 </template>
 
 <script setup>
 import { defineProps } from 'vue';
 
 const props = defineProps({
-    cat: Object,
+    cat: String,
 }) 
 
 const catIcon = () => {
@@ -42,6 +44,5 @@ const catIcon = () => {
 }
 </script>
 
-<style>
-
+<style scoped>
 </style>

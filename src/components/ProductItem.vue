@@ -42,4 +42,11 @@ button {
     margin-left: 10px;
 }
 
+.align-between {
+    justify-content: space-between;
+}
+.align-start {
+
+}
+
 </style>

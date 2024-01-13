@@ -19,6 +19,9 @@ onMounted(() => {
 </script>
 
 <style scoped>
+.category-list a {
+    color: var(--dark-color);
+}
 h2 {
     text-align: center;
 }

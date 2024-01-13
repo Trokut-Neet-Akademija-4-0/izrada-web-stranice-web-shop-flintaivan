@@ -42,5 +42,9 @@ onMounted(() => {
 <style scoped>
 h2 {
     text-align: center;
+    color: var(--light-color);
+}
+.category-list a{
+    color: var(--light-color);
 }
 </style>

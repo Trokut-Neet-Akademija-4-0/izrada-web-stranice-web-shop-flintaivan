@@ -7,6 +7,7 @@ export const productsStore = defineStore({
     highlightedProducts: [],
     cart: [],
     categories: [],
+    categoryProducts: [],
   }),
 
   actions: {
@@ -26,6 +27,14 @@ export const productsStore = defineStore({
           .catch(err => {
               console.error('Failed to fetch categories:', err);
           });
+    },
+    async fetchByCategory(category) {
+      await fetch(`https://dummyjson.com/products/category/` + category)
+        .then(res => res.json())
+        .then(json => {
+          this.categoryProducts = json.products
+          // console.log(this.categoryProducts)
+        });
     },
     addToCart(product) {
       this.cart.push(product)
