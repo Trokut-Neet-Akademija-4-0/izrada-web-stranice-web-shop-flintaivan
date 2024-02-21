@@ -17,6 +17,7 @@
             <BlogItem class="mt-5"/>
         </div>
         <div class="full-width primary mt-5">
+            
             <div class="content-wrapper py30">
                 <Newsletter />
             </div>
