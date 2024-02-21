@@ -1,0 +1,3 @@
+[submodule "tech-shop"]
+	path = tech-shop
+	url = git@github.com:flintaivan/tech-shop.git
